@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, ul, li, p, header, a, nav{
+    
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    font-family: monospace;
+
+}
+
+a{
+     
+    text-decoration: none;
+    color: white;
+
+}
+
+nav{
+
+    padding: 30px;
+    background: #7E4A39;
+
+}
+
+nav section{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+nav ul#list li{
+    
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+
+nav header a img{
+
+
+    height: 160px;
+
+}
+
+nav section a img#abre{
+    height: 80px;
+
+}
+
+aside section{
+    text-align: right;
+    max-width: 100%;
+    background-color: #7E4A39;
+    top: 0;
+    border-radius: 2px;
+}
+
+aside section img{
+    height: 50px;
+
+}
+
+aside section ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 556px;
+}
+
+aside section ul li a{
+    font-size: 20px;
+    color: black;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{ 
+    background-color: #C6AE5B;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 25px;
+    text-align: center;
+}
+
+h5{
+    font-size: 30px;
+}
+
+section article{
+    margin: 20px;
+    max-width: 550px;
+}
+
+article section{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+article section img{
+    width: 20%;
+    height: 600px;
+
+}
+
+footer{
+    display: flex;
+    background-color: #7E4A39;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+footer section{
+    max-width: 100%;
+}
+
+footer section a{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+footer section a img.conta{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;   
+}
+
+#menu{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+}
+
+.prod{
+    margin-bottom: 20px;
+}
+
+.foot{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.botao{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #7E4A39;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color:  #C6AE5B;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+#jj{
+
+    width: 150px;
+    height: 150px;
+
+}
+
+@media (max-width: 670px){
+
+
+    #menu{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    #abre, #fecha{
+        display: none;
+    }
+
+    header{
+
+        padding: 50px;
+
+    }
+
+    nav section{
+        flex-direction: row-reverse;
+    }
+    li{
+        background-color: #c0c0c0;
+        text-align: center;
+        margin: 3px;
+       
+    }
+
+    #log{
+        font-size: 30px;
+    }
+    
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #moldura {
+        order: 1;
+        max-width: 100%; 
+        height: 400px;
+    }
+
+    .botao {
+        order: 2;
+        margin-top: 10px;
+    }
+    article section img{
+        width: 50%;
+        height: 600px;
+    
+    }
+
+}
